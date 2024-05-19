@@ -33,6 +33,20 @@ git clone https://github.com/mrv-testin/GitHub-Foundations-Example_01.git
 cd GitHub-Foundations-Example_01/
 ```
 
+## SSH
+```sh
+git clone git@github.com:mrv-testin/GitHub-Foundations-Example_01.git
+```
+
+We will need to create our own SSH rsa Key pair
+```sh
+sshe-keygen -t rsa
+```
+We can test our connection here:
+```
+ssh -T git@github.com
+```
+
 ## Commits
 When we want to commit code we can write git commit which will open up the commit edit message in the editor of choice. 
 ```sh
@@ -52,6 +66,14 @@ git commit -m "add another exclamation mark"
 ## Remotes
 
 ## Stashing
+
+```
+git stash list
+git stash
+git stash save myName
+git stash apply 
+git stash pop
+```
 
 ## Merging
 
